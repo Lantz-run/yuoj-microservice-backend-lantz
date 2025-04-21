@@ -27,6 +27,7 @@ public class JavaLanguagetJudgeStrategy implements JudgeStrategy {
 
     /**
      * 执行判题
+     *
      * @param judgeContext
      * @return
      */
@@ -55,7 +56,13 @@ public class JavaLanguagetJudgeStrategy implements JudgeStrategy {
         // 依次判断每一项输出和预期输出是否相等
         for (int i = 0; i < judgeCaseList.size(); i++) {
             JudgeCase judgeCase = judgeCaseList.get(i);
-            if (!judgeCase.getOutput().equals(outputList.get(i))) {
+            // 处理预期输出
+            String expectedOutput = judgeCase.getOutput().trim(); // 移除首尾空白
+
+            // 处理实际输出
+            String actualOutput = outputList.get(i).trim();  // 移除首尾空白
+
+            if (!expectedOutput.equals(actualOutput)) {
                 judgeInfoMessageEnum = JudgeInfoMessageEnum.WRONG_ANSWER;
                 judgeInfoResponse.setMessage(judgeInfoMessageEnum.getValue());
                 return judgeInfoResponse;
