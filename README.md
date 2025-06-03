@@ -1,3 +1,12 @@
+## 项目图示
+![1744697572555](https://github.com/user-attachments/assets/a7c22d83-13fb-4313-bf5d-38ccaa22f7ef)
+![1744697678618](https://github.com/user-attachments/assets/3b365178-db9e-4a21-aaae-79d9970cd4d5)
+![1744697660468](https://github.com/user-attachments/assets/5caa0d35-e0d6-401d-a5be-7cce7ccab179)
+![1744697649175](https://github.com/user-attachments/assets/58d31ab9-4ddd-47fa-8bea-85957f8134da)
+![1744697633074](https://github.com/user-attachments/assets/266b70af-2566-4c17-b177-42243a54f4df)
+![1744697608314](https://github.com/user-attachments/assets/d555aa90-5062-466b-998d-70d31ad6e9f3)
+
+
 ## 跑通整个项目流程
 
 1）移动 questionSubmitController 代码到 questionController 中
